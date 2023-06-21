@@ -1,0 +1,28 @@
+:root {
+  /* Project fonts and weights */
+  --source-standard: "Tangerine", cursive;
+  --weight-titles: 700;
+  --weight-texts: 400;
+
+  /* Images that will be used throughout the project */
+  --signal-cross: url("../image/santissimo_sacramento.jpg");
+  --glory: url("../image/santissimo_cristo.jpg");
+  --father-our: url("../image/jesus_ensinando.jpg");
+  --holy-mary: url("../image/nossa_senhora_fatima.jpg");
+  --save-queen: url("../image/nossa_senhora_guadalupe.jpg");
+  --spirit-holy: url("../image/divina_eucaristia.jpg");
+
+  /* Colors that will be used */
+  --color-initial: #008004;
+  --color-second: #4DFF52;
+  --color-third: #00FF08;
+  --color-fourth: #268029;
+  --color-fifth: #00CC07;
+  --color-text: #F3F3F3;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
