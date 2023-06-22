@@ -1,28 +1,108 @@
+@charset "UTF-8";
+
 :root {
   /* Project fonts and weights */
-  --source-standard: "Tangerine", cursive;
-  --weight-titles: 700;
-  --weight-texts: 400;
+  --source-standard: "Noto Sans KR", sans-serif;
+  --weight-titles: 900;
+  --weight-title-second: 500;
+  --weight-texts: 300;
 
   /* Images that will be used throughout the project */
-  --signal-cross: url("../image/santissimo_sacramento.jpg");
   --glory: url("../image/santissimo_cristo.jpg");
-  --father-our: url("../image/jesus_ensinando.jpg");
   --holy-mary: url("../image/nossa_senhora_fatima.jpg");
-  --save-queen: url("../image/nossa_senhora_guadalupe.jpg");
-  --spirit-holy: url("../image/divina_eucaristia.jpg");
+  --spirit-holy: url("../image/espirito_santo.jpg");
 
   /* Colors that will be used */
-  --color-initial: #008004;
-  --color-second: #4DFF52;
-  --color-third: #00FF08;
   --color-fourth: #268029;
-  --color-fifth: #00CC07;
-  --color-text: #F3F3F3;
+  --color-text: #f3f3f3;
 }
 
 * {
-  padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  padding: 0;
+  font-size: 0.8em;
+  font-family: var(--source-standard);
+}
+
+html,
+body {
+  min-height: 100vh;
+  background-color: darkgray;
+}
+
+header {
+  background-color: var(--color-fourth);
+  color: var(--color-text);
+  text-align: center;
+}
+
+header > h1 {
+  padding-top: 50px;
+  font-variant: small-caps;
+  font-size: 10vw;
+  font-weight: var(--weight-titles);
+}
+
+section {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  line-height: 2em;
+  padding-left: 30px;
+  font-size: 5vw;
+}
+
+section > p {
+  padding-bottom: 2em;
+  font-weight: var(--weight-texts);
+}
+
+section > h2 {
+  font-weight: var(--weight-title-second);
+}
+
+section.normal {
+  background-color: white;
+  color: black;
+  text-align: right;
+}
+
+section.normal > p,
+section.normal > h2 {
+  margin-right: 25px;
+}
+
+section.imagem {
+  background-color: rgba(26, 20, 20, 0.281);
+  color: var(--color-text);
+  box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.212);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+section.imagem > p {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.527);
+  padding: 5px;
+  text-shadow: 1px 1px 0px black;
+}
+
+section#imagem01-oracao {
+  background-image: var(--glory);
+  background-position: center;
+}
+section#imagem02-oracao {
+  background-image: var(--holy-mary);
+  background-position: center;
+}
+section#imagem03-oracao {
+  background-image: var(--spirit-holy);
+  background-position: center;
+}
+
+footer {
+  font-size: 2em;
+  background-color: var(--color-fourth);
+  text-align: center;
+  color: var(--color-text);
+  padding: 10px;
 }
