@@ -1,7 +1,7 @@
-<div style="display: flex">
-  <img style="margin-right: 10px" src=".github/tela_inicial.png" alt="" width="50%">
-  <img src=".github/segunda_parte.png" alt="" width="50%">
-</div>
+<p>
+  <img src=".github/tela_inicial.png" alt="Tela inicial do projeto contendo a primeira oração" width="100%">
+  <img src=".github/segunda_parte.png" alt="Segunda tela depois da tela inicial" width="100%">
+</p>
 <br>
 
 ## 🖥️ Projeto
